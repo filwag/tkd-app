@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { loadCurriculum, loadAllBeltLevels } from "@/curriculum/loader";
 import { BeltViewTracker } from "@/components/belt-view-tracker";
+import { DrillPracticeRow } from "@/components/drill-practice-row";
 import type { Technique } from "@/curriculum/types";
 
 function ordinal(n: number): string {
@@ -159,6 +160,7 @@ export default async function BeltPage({ params }: BeltParams) {
                   <p className="mt-3 text-sm leading-relaxed text-gray-700">
                     {t.meaning}
                   </p>
+                  <DrillPracticeRow drillId={t.id} beltId={beltId} name={t.name} />
                 </div>
               ))}
             </div>
@@ -197,6 +199,11 @@ export default async function BeltPage({ params }: BeltParams) {
                         <p className="text-sm text-gray-600">
                           {tech.description}
                         </p>
+                        <DrillPracticeRow
+                          drillId={tech.id}
+                          beltId={beltId}
+                          name={tech.englishName}
+                        />
                       </li>
                     ))}
                   </ul>
@@ -238,6 +245,11 @@ export default async function BeltPage({ params }: BeltParams) {
                       <p className="text-sm text-gray-800">{s.defence}</p>
                     </div>
                   </div>
+                  <DrillPracticeRow
+                    drillId={s.id}
+                    beltId={beltId}
+                    name={`Il-Su Sik step ${s.number}`}
+                  />
                 </div>
               ))}
             </div>
@@ -265,6 +277,11 @@ export default async function BeltPage({ params }: BeltParams) {
                   <p className="mt-2 text-sm leading-relaxed text-gray-600">
                     {item.answer}
                   </p>
+                  <DrillPracticeRow
+                    drillId={item.id}
+                    beltId={beltId}
+                    name={item.question}
+                  />
                 </div>
               ))}
             </div>
