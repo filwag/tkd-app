@@ -1,0 +1,24 @@
+name: Content fix / suggestion
+description: Something looks wrong or could be improved in the curriculum or drills
+labels: [content-fix]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: Which page were you on? (copy from the address bar)
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong or could be improved?
+      description: Be as specific as you can — e.g. "White belt stepping punch has wrong stance name"
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source or reference (optional)
+      description: Link or citation that supports the correction (e.g. HED TKD / TAGB grading syllabus)
