@@ -42,3 +42,44 @@ oneStepSparring:
       (Apcha Busigi) to the attacker's abdomen.
     beltLevelId: 10th-kup
     source: "HED TKD school syllabus; TAGB il-su sik methodology"
+
+# ── 9th kup (white belt with yellow tag) ────────────────────────────────────
+# Patterns 4–6. Introduces the high block and side kick from Do-San.
+# Note: school-specific step order should be verified against HED TKD grading sheet.
+# Source: HED TKD school syllabus; TAGB il-su sik methodology.
+
+  - id: il-su-sik-4
+    number: 4
+    attack: >
+      Step forward with the right foot into right walking stance; execute a right
+      high-section obverse punch (Nopunde Baro Jirugi) to the head.
+    defence: >
+      Step back with the left foot into left L-stance; execute a right high outer
+      forearm block (Nopunde Bakat Palmok Makgi) to deflect the punch;
+      counter with a left middle reverse punch (Kaunde Bandae Jirugi) to the solar plexus.
+    beltLevelId: 9th-kup
+    source: "HED TKD school syllabus; TAGB il-su sik methodology"
+
+  - id: il-su-sik-5
+    number: 5
+    attack: >
+      Step forward with the left foot into left walking stance; execute a left
+      obverse punch (Kaunde Baro Jirugi) to the middle section.
+    defence: >
+      Step back with the right foot into right L-stance; execute a left high outer
+      forearm block to deflect upward; counter with a right side piercing kick
+      (Yop Cha Jirugi) to the attacker's ribs.
+    beltLevelId: 9th-kup
+    source: "HED TKD school syllabus; TAGB il-su sik methodology"
+
+  - id: il-su-sik-6
+    number: 6
+    attack: >
+      Step forward with the right foot into right walking stance; execute a right
+      obverse punch to the middle section.
+    defence: >
+      Step to the right with the right foot into right walking stance; execute
+      a left low outer forearm block to deflect; counter with a right obverse punch
+      to the solar plexus followed immediately by a left reverse punch to the face.
+    beltLevelId: 9th-kup
+    source: "HED TKD school syllabus; TAGB il-su sik methodology"

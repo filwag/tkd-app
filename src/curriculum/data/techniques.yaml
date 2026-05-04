@@ -62,3 +62,38 @@ techniques:
       Chambered from the knee; hip thrust forward on execution.
     beltLevelId: 10th-kup
     source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+# ── 9th kup (white belt with yellow tag) ────────────────────────────────────
+# New techniques introduced in Do-San.
+# Source: ITF Encyclopedia (Choi Hong Hi, 1999); TAGB syllabus
+
+  - id: nopunde-bakat-palmok-makgi
+    category: block
+    koreanName: 높은 바깥 팔목 막기
+    englishName: High outer forearm block
+    description: >
+      Sweeping block from inside to outside protecting the upper body and head.
+      Introduced in the first four movements of Do-San (L-stance).
+    beltLevelId: 9th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: kaunde-bandae-jirugi
+    category: attack
+    koreanName: 가운데 반대 지르기
+    englishName: Middle reverse punch
+    description: >
+      Middle-section punch with the opposite fist to the forward foot.
+      Develops combination counter-attacking introduced in Do-San.
+    beltLevelId: 9th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: yop-cha-jirugi
+    category: kick
+    koreanName: 옆차 지르기
+    englishName: Side piercing kick
+    description: >
+      Kick delivered to the side with the foot edge (sonkal), targeting the
+      ribs or solar plexus. Knee chambers to the front before thrusting sideways.
+      First introduced in Do-San.
+    beltLevelId: 9th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"

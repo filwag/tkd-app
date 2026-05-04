@@ -73,3 +73,42 @@ theory:
     category: etiquette
     beltLevelId: 10th-kup
     source: "TAGB syllabus; HED TKD school curriculum"
+
+# ── 9th kup (white belt with yellow tag) ────────────────────────────────────
+# Source: ITF Encyclopedia (Choi Hong Hi, 1999); TAGB syllabus (tagb.co.uk)
+
+  - id: theory-do-san-meaning
+    question: What does Do-San mean and who was he?
+    answer: >
+      Do-San (도산) was the pseudonym of the patriot Ahn Chang-Ho (1876–1938),
+      who devoted his life to furthering Korean education and independence.
+      The tul is named in his honour.
+    category: meaning
+    beltLevelId: 9th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999, p.57)"
+
+  - id: theory-do-san-movements
+    question: How many movements are in Do-San?
+    answer: "28"
+    category: meaning
+    beltLevelId: 9th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: theory-yop-cha-jirugi
+    question: What is Yop Cha Jirugi?
+    answer: >
+      Side piercing kick (옆차 지르기). Delivered to the side using the foot edge,
+      targeting the ribs or solar plexus. First introduced in Do-San.
+    category: terminology
+    beltLevelId: 9th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: theory-nopunde-block
+    question: What is Nopunde Bakat Palmok Makgi?
+    answer: >
+      High outer forearm block (높은 바깥 팔목 막기). A sweeping block from inside
+      to outside protecting the upper body and head, performed in L-stance.
+      Introduced in the opening moves of Do-San.
+    category: terminology
+    beltLevelId: 9th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
