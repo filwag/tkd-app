@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { loadAllBeltLevels } from "@/curriculum/loader";
 
@@ -50,9 +51,13 @@ export default async function Home() {
   return (
     <main className="flex-1 w-full max-w-lg mx-auto px-4 py-12">
       <header className="mb-10 text-center">
-        <p className="text-5xl mb-3" aria-hidden>
-          🥋
-        </p>
+        <Image
+          src="/logo.jpg"
+          alt="TKD App logo"
+          width={80}
+          height={80}
+          className="mx-auto mb-4 rounded-xl"
+        />
         <h1 className="text-3xl font-bold tracking-tight text-gray-900">
           Taekwondo Training
         </h1>
