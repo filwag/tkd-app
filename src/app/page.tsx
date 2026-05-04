@@ -1,10 +1,16 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center px-4 py-16 text-center">
       <div className="w-full max-w-sm">
-        <p className="mb-2 text-5xl" aria-hidden>
-          🥋
-        </p>
+        <Image
+          src="/logo.jpg"
+          alt="TKD App logo"
+          width={80}
+          height={80}
+          className="mx-auto mb-4 rounded-xl"
+        />
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-gray-900">
           Hello, Taekwondo
         </h1>
