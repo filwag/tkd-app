@@ -1,6 +1,9 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useSyncExternalStore } from "react";
+
+const DRILL_LOG_EVENT = "tkd:drill-log-changed";
+const EMPTY_LOG_SNAPSHOT = "[]";
 
 // Returns YYYY-MM-DD in the device's local timezone.
 // Using getFullYear/Month/Date avoids the UTC-vs-local trap that
@@ -25,15 +28,18 @@ function storageKey(drillId: string): string {
   return `tkd:drill:${drillId}:log`;
 }
 
-function loadLog(drillId: string): string[] {
+function parseLogSnapshot(snapshot: string): string[] {
   try {
-    const raw = localStorage.getItem(storageKey(drillId));
-    if (!raw) return [];
-    const parsed: unknown = JSON.parse(raw);
+    const parsed: unknown = JSON.parse(snapshot);
     return Array.isArray(parsed) ? (parsed as string[]) : [];
   } catch {
     return [];
   }
+}
+
+function readLogSnapshot(drillId: string): string {
+  if (typeof window === "undefined") return EMPTY_LOG_SNAPSHOT;
+  return localStorage.getItem(storageKey(drillId)) ?? EMPTY_LOG_SNAPSHOT;
 }
 
 function saveLog(drillId: string, log: string[]): void {
@@ -42,6 +48,47 @@ function saveLog(drillId: string, log: string[]): void {
   } catch {
     // Quota exceeded or private browsing — silently skip.
   }
+}
+
+function emitLogChange(drillId: string): void {
+  if (typeof window === "undefined") return;
+  window.dispatchEvent(
+    new CustomEvent<{ key: string }>(DRILL_LOG_EVENT, {
+      detail: { key: storageKey(drillId) },
+    }),
+  );
+}
+
+function subscribeDrillLog(
+  drillId: string,
+  onStoreChange: () => void,
+): () => void {
+  if (typeof window === "undefined") return () => {};
+
+  const key = storageKey(drillId);
+  const handleStorage = (event: StorageEvent) => {
+    if (event.key === null || event.key === key) {
+      onStoreChange();
+    }
+  };
+  const handleCustom = (event: Event) => {
+    const detail = (event as CustomEvent<{ key?: string }>).detail;
+    if (!detail?.key || detail.key === key) {
+      onStoreChange();
+    }
+  };
+
+  window.addEventListener("storage", handleStorage);
+  window.addEventListener(DRILL_LOG_EVENT, handleCustom);
+
+  return () => {
+    window.removeEventListener("storage", handleStorage);
+    window.removeEventListener(DRILL_LOG_EVENT, handleCustom);
+  };
+}
+
+function subscribeHydration(): () => void {
+  return () => {};
 }
 
 // Streak = consecutive calendar days (device TZ) up through today that
@@ -87,23 +134,23 @@ export type DrillTrackerState = {
 };
 
 export function useDrillTracker(drillId: string): DrillTrackerState {
-  const [log, setLog] = useState<string[]>([]);
-  const [hydrated, setHydrated] = useState(false);
-
-  useEffect(() => {
-    setLog(loadLog(drillId));
-    setHydrated(true);
-  }, [drillId]);
+  const hydrated = useSyncExternalStore(subscribeHydration, () => true, () => false);
+  const logSnapshot = useSyncExternalStore(
+    useCallback(
+      (onStoreChange: () => void) => subscribeDrillLog(drillId, onStoreChange),
+      [drillId],
+    ),
+    useCallback(() => readLogSnapshot(drillId), [drillId]),
+    () => EMPTY_LOG_SNAPSHOT,
+  );
+  const log = parseLogSnapshot(logSnapshot);
 
   const markPracticed = useCallback(() => {
     const today = localDateStr();
-    setLog((prev) => {
-      if (prev.includes(today)) return prev;
-      const next = [...prev, today];
-      saveLog(drillId, next);
-      return next;
-    });
-  }, [drillId]);
+    if (log.includes(today)) return;
+    saveLog(drillId, [...log, today]);
+    emitLogChange(drillId);
+  }, [drillId, log]);
 
   const practicedDates = new Set(log);
   const today = localDateStr();
