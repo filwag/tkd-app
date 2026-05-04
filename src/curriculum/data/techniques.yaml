@@ -1,0 +1,64 @@
+# Fundamental techniques — 10th kup (white belt)
+# These are the stances, blocks, and attacks used in Chon-Ji and basic drills.
+# Source: ITF Encyclopedia (Choi Hong Hi, 1999); TAGB syllabus
+
+techniques:
+  - id: gunnun-sogi
+    category: stance
+    koreanName: 걷는 서기
+    englishName: Walking stance
+    description: >
+      Forward stance with feet shoulder-width apart. Weight distributed 50/50.
+      Front knee bent; back leg straight. Primary stance in Chon-Ji.
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: narani-sogi
+    category: stance
+    koreanName: 나란히 서기
+    englishName: Parallel stance
+    description: >
+      Both feet parallel, shoulder-width apart, knees slightly bent.
+      Used in the ready position (Narani Junbi Sogi) before patterns.
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: niunja-sogi
+    category: stance
+    koreanName: 니은자 서기
+    englishName: L-stance (rear stance)
+    description: >
+      70% weight on rear foot. Feet at 90 degrees, front foot pointing forward.
+      Named after the Korean letter ㄴ (nieun). Used in Chon-Ji and blocking.
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: najunde-bakat-palmok-makgi
+    category: block
+    koreanName: 낮은 바깥 팔목 막기
+    englishName: Low outer forearm block
+    description: >
+      Sweeping block from inside to outside protecting the lower body.
+      Primary block in the first half of Chon-Ji.
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: kaunde-baro-jirugi
+    category: attack
+    koreanName: 가운데 바로 지르기
+    englishName: Middle obverse punch
+    description: >
+      Middle-section punch with the same-side fist as the forward foot.
+      The fundamental counter-attack used throughout Chon-Ji.
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: apcha-busigi
+    category: kick
+    koreanName: 앞차 부시기
+    englishName: Front snap kick
+    description: >
+      Snap kick using the ball of the foot to the abdomen or solar plexus.
+      Chambered from the knee; hip thrust forward on execution.
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"

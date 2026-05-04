@@ -1,0 +1,44 @@
+# One-step sparring (Il-Su Sik 일수식) — 10th kup grading
+# Basic pre-arranged sequences: attacker announces "Attack!" (Kongkyok!), then steps in.
+# Source: HED TKD school syllabus; standard TAGB/ITF il-su sik methodology.
+# Note: exact school variations should be verified against HED TKD grading sheet.
+
+oneStepSparring:
+  - id: il-su-sik-1
+    number: 1
+    attack: >
+      Step back with the right foot into left walking stance, execute left low
+      outer forearm block; then step forward with the right foot delivering a right
+      obverse punch (Kaunde Baro Jirugi) to the middle section.
+    defence: >
+      Step to the right with the right foot into right walking stance; execute
+      left low outer forearm block to deflect the incoming punch; counter with
+      right obverse punch to the solar plexus.
+    beltLevelId: 10th-kup
+    source: "HED TKD school syllabus; TAGB il-su sik methodology"
+
+  - id: il-su-sik-2
+    number: 2
+    attack: >
+      Step back with the left foot into right walking stance, execute right low
+      outer forearm block; then step forward with the left foot delivering a left
+      obverse punch to the middle section.
+    defence: >
+      Step to the left with the left foot into left walking stance; execute right
+      low outer forearm block to deflect; counter with left obverse punch to the
+      solar plexus.
+    beltLevelId: 10th-kup
+    source: "HED TKD school syllabus; TAGB il-su sik methodology"
+
+  - id: il-su-sik-3
+    number: 3
+    attack: >
+      Step back with the right foot into left walking stance, execute left low
+      outer forearm block; then step forward with the right foot delivering a right
+      obverse punch to the middle section.
+    defence: >
+      Step to the right with the right foot into right walking stance; execute
+      left low outer forearm block to deflect; counter with a right front snap kick
+      (Apcha Busigi) to the attacker's abdomen.
+    beltLevelId: 10th-kup
+    source: "HED TKD school syllabus; TAGB il-su sik methodology"

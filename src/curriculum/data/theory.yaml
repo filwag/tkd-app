@@ -1,0 +1,75 @@
+# Theory questions — 10th kup grading (white belt → yellow tag)
+# Source: ITF Encyclopedia (Choi Hong Hi, 1999); TAGB syllabus (tagb.co.uk)
+
+theory:
+  - id: theory-tkd-meaning
+    question: What does "Taekwon-Do" mean?
+    answer: >
+      The Way of the Foot and Fist. Tae (발) = foot/to kick, Kwon (권) = fist/to punch,
+      Do (도) = way/art. A Korean martial art combining striking techniques with
+      a philosophical code of conduct.
+    category: terminology
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999); TAGB syllabus"
+
+  - id: theory-five-tenets
+    question: What are the five tenets of Taekwon-Do?
+    answer: >
+      Courtesy (Ye-Ui 예의), Integrity (Yom-Chi 염치), Perseverance (In-Nae 인내),
+      Self-Control (Guk-Ki 극기), Indomitable Spirit (Baekjul Boolgul 백절불굴).
+    category: tenets
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999); TAGB syllabus"
+
+  - id: theory-chon-ji-meaning
+    question: What does Chon-Ji mean?
+    answer: >
+      Heaven and Earth (천지). In the Orient it is interpreted as the creation
+      of the world or the beginning of human history.
+    category: meaning
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999, p.41)"
+
+  - id: theory-chon-ji-movements
+    question: How many movements are in Chon-Ji?
+    answer: "19"
+    category: meaning
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: theory-itf-founder
+    question: Who founded ITF Taekwon-Do and when?
+    answer: "General Choi Hong Hi, on 11 April 1955."
+    category: history
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999); TAGB syllabus"
+
+  - id: theory-num-tul
+    question: How many tul (patterns) are in ITF Taekwon-Do?
+    answer: >
+      24, representing the 24 hours of the day — symbolic of the fact that
+      General Choi dedicated each hour of his life to Taekwon-Do.
+    category: history
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: theory-do-san
+    question: Who was Do-San and what tul is named after him?
+    answer: >
+      Do-San (도산) was the pseudonym of patriot Ahn Chang-Ho (1876–1938),
+      who dedicated his life to Korean independence and education.
+      The second ITF tul, Do-San (28 movements), is named in his honour.
+      (Asked at higher kup levels; included here as background.)
+    category: history
+    beltLevelId: 10th-kup
+    source: "ITF Encyclopedia (Choi Hong Hi, 1999)"
+
+  - id: theory-bow-etiquette
+    question: When and why do we bow in Taekwon-Do?
+    answer: >
+      We bow when entering and leaving the dojang, to the instructor before and
+      after training, and to a partner before and after sparring or patterns.
+      The bow (Kyong-Ye 경례) shows respect — a core expression of the tenet Ye-Ui (Courtesy).
+    category: etiquette
+    beltLevelId: 10th-kup
+    source: "TAGB syllabus; HED TKD school curriculum"
